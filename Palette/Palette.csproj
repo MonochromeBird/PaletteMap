@@ -4,6 +4,16 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>MonochromeBird.Palette</PackageId>
+        <Version>0.0.1</Version>
+        <Title>Palette</Title>
+        <Authors>MonochromeBird</Authors>
+        <Description>Tiny, low memory usage item-to-id register.</Description>
+        <Copyright>MonochromeBird</Copyright>
+        <PackageProjectUrl>https://github.com/MonochromeBird/PaletteMap</PackageProjectUrl>
+        <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/MonochromeBird/PaletteMap</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>

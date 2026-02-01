@@ -4,6 +4,15 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <PackageId>MonochromeBird.PaletteMap</PackageId>
+        <Version>0.0.1</Version>
+        <Title>PaletteMap</Title>
+        <Authors>MonochromeBird</Authors>
+        <Copyright>MonochromeBird</Copyright>
+        <PackageProjectUrl>https://github.com/MonochromeBird/PaletteMap</PackageProjectUrl>
+        <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/MonochromeBird/PaletteMap</RepositoryUrl>
+        <Description>Tiny, low memory usage, unidimensional map for storing map cells.</Description>
     </PropertyGroup>
 
     <ItemGroup>

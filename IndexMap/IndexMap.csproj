@@ -4,6 +4,16 @@
         <TargetFramework>net10.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <PackageId>MonochromeBird.IndexMap</PackageId>
+        <Version>0.0.1</Version>
+        <Title>IndexMap</Title>
+        <Authors>MonochromeBird</Authors>
+        <Description>Tiny, low memory usage, unidimensional map for storing unsigned integers.</Description>
+        <Copyright>MonochromeBird</Copyright>
+        <PackageProjectUrl>https://github.com/MonochromeBird/PaletteMap</PackageProjectUrl>
+        <PackageLicenseUrl>https://www.apache.org/licenses/LICENSE-2.0</PackageLicenseUrl>
+        <RepositoryUrl>https://github.com/MonochromeBird/PaletteMap</RepositoryUrl>
     </PropertyGroup>
 
     <ItemGroup>
