@@ -41,6 +41,16 @@ public record IndexMap : IEnumerable<IndexMapItem> {
 		set => Write(Words, BitWidth, position, value);
 	}
 
+	public IEnumerable<IndexMapItem> this[Range range] {
+		get {
+			var (start, length) = range.GetOffsetAndLength(Words.Length);
+			var end = start + length;
+			for (var position = start; position < end; position++) {
+				yield return new IndexMapItem((uint)position, this[(uint)position]);
+			}
+		}
+	}
+
 
 	public void ReEncode(byte bitWidth, uint? slotCount = null) {
 		var slots = slotCount ?? SlotCount;

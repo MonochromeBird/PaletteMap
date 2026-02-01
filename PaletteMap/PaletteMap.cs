@@ -29,6 +29,16 @@ public record PaletteMap<T>(
 		get => Palette[Map[position]];
 	}
 
+	public IEnumerable<PaletteMapItem<T>> this[Range range] {
+		get {
+			var (start, length) = range.GetOffsetAndLength((int)Map.WordCount);
+			var end = start + length;
+			for (var position = start; position < end; position++) {
+				yield return new PaletteMapItem<T>((uint)position, this[(uint)position]);
+			}
+		}
+	}
+
 
 	private uint[] GetUnusedPaletteIds() {
 		var used = new HashSet<uint>();
